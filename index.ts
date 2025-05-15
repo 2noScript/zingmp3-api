@@ -2,7 +2,6 @@ import express, { Express, Request, Response } from 'express'
 import cors from 'cors'
 import { api } from './routes'
 import { PORT } from './env'
-import { ZingMp3 } from './utils'
 
 const app: Express = express()
 

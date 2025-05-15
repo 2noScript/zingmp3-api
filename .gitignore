@@ -15,4 +15,5 @@ node_modules
 .yarn
 yarn.lock
 .editorconfig
+./dist
 

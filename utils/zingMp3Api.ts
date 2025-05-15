@@ -42,9 +42,7 @@ class ZingMp3Api {
 	private hashParam(path: string, id: string) {
 		return this.getHmac512(
 			path +
-				this.getHash256(
-					`ctime=${this.CTIME}id=${id}version=${this.VERSION}`
-				),
+				this.getHash256(`ctime=${this.CTIME}id=${id}version=${this.VERSION}`),
 			this.SECRET_KEY
 		)
 	}

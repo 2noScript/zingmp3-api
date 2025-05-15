@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    ports:
+      - "5008:5008"
+    environment:
+      - PORT=5008
+      - API_KEY=88265e23d4284f25963e6eedac8fbfa3
+      - SECRET_KEY=2aa2d1c561e809b267f3638c4a307aab
+      - WEB_API=https://zingmp3.vn
+      - VERSION=1.8.38
